@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModMetaData>
+    <name>Lilly Clothes</name>
+    <author>Lilly</author>
+    <packageId>Lilly.Clothes</packageId>
+    <supportedVersions>        
+        <li>1.7</li>
+    </supportedVersions>
+<description>Lilly's clothing mod</description>
+
+</ModMetaData>

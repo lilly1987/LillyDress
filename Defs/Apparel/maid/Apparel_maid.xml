@@ -1,0 +1,56 @@
+﻿<Defs>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_Maid_lilly</defName>
+    <description>maid dress</description>
+    <label>maid dress</label>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <displayPriority>208</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>maid/Maid</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <color>(1,1,1,1)</color>
+    </graphicData>
+    <costList>
+      <Cloth>1</Cloth>
+    </costList>
+    <statBases>
+      <WorkToMake>100</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>0</Mass>
+      <Beauty>10</Beauty>
+      <EquipDelay>0</EquipDelay>
+    </statBases>
+    <!-- <equippedStatOffsets>
+      <CleaningSpeed>0.15</CleaningSpeed>
+      <SocialImpact>0.15</SocialImpact>
+      <PlantHarvestYield>0.15</PlantHarvestYield>
+      <PlantWorkSpeed>0.15</PlantWorkSpeed>
+      <AnimalGatherSpeed>0.15</AnimalGatherSpeed>
+      <CookSpeed>0.15</CookSpeed>
+    </equippedStatOffsets> -->
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Feet</li>
+      </bodyPartGroups>
+      <wornGraphicPath>maid/Maid</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+    </apparel>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+  </ThingDef>
+  
+</Defs>

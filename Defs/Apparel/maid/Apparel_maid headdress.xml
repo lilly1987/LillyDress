@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_Maid_headdress_Lilly</defName>
+    <label>maid headdress</label>
+    <description>maid headdress</description>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <displayPriority>205</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>maid/Maid headdress_Helemt</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <color>(1,1,1,1)</color>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <costList>
+      <Cloth>1</Cloth>
+    </costList>
+    <statBases>
+      <WorkToMake>100</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>0</Mass>
+      <Beauty>10</Beauty>
+      <EquipDelay>0</EquipDelay>
+    </statBases>
+    <!-- <equippedStatOffsets>
+      <SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets> -->
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>maid/Maid headdress_Helemt</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+
+ 
+
+</Defs>
