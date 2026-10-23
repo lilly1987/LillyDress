@@ -3,7 +3,7 @@
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_Maid_lilly</defName>
     <description>maid dress</description>
-    <label>maid dress</label>
+    <label>maid dress Lilly</label>
     <recipeMaker>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
       <displayPriority>208</displayPriority>
@@ -44,6 +44,14 @@
       <layers>
         <li>Middle</li>
       </layers>
+      <gender>Female</gender>
+      <tags>
+        <li>Royal</li>
+        <li>RoyalTier2</li>
+        <li>RoyalTier3</li>
+        <li>RoyalTier5</li>
+        <li>RoyalTier6</li>
+      </tags>
     </apparel>
     <tradeTags>
       <li>BasicClothing</li>

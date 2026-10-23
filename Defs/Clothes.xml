@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>ZX_Costumes_Category</defName>
+    <label>ZX‘ Costumes</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+  <ThingDef Name="ZXCostumesApparelBase_Lilly" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <!-- <pathCost>10</pathCost> -->
+    <useHitPoints>True</useHitPoints>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <generateCommonality>0</generateCommonality>
+    <generateAllowChance>0</generateAllowChance>
+    <tradeability>Sellable</tradeability>
+    <techLevel>Medieval</techLevel>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <onGroundRandomRotateAngle>10</onGroundRandomRotateAngle>
+    </graphicData>
+    <apparel>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <wearPerDay>0</wearPerDay>
+      <gender>Female</gender>
+      <shellRenderedBehindHead>true</shellRenderedBehindHead>
+      <developmentalStageFilter>Adult</developmentalStageFilter>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <tags>
+        <li>Royal</li>
+        <li>RoyalTier2</li>
+        <li>RoyalTier5</li>
+        <li>RoyalTier6</li>
+        <li>RoyalTier7</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>RGBA(1,1,1,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <tradeTags>
+      <li>BasicClothing</li>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+    <tickerType>Normal</tickerType>
+    <thingCategories Inherit="false">
+      <li>ZX_Costumes_Category</li>
+    </thingCategories>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <displayPriority>20</displayPriority>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="ZXCostumesApparelBase_Lilly">
+    <defName>ZA_Maid_L_Lilly</defName>
+    <label>Maid dress Luna Lilly</label>
+    <description>Maid dress Luna Lilly</description>
+    <graphicData>
+      <texPath>Apparel/ZA_Maid_L</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Cloth>1</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <WorkToMake>10</WorkToMake>
+      <Mass>0</Mass>
+      <!-- <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.10</ArmorRating_Heat>
+      <Insulation_Cold>24</Insulation_Cold>
+      <Insulation_Heat>8</Insulation_Heat>
+      <Flammability>-1</Flammability> -->
+      <EquipDelay>0</EquipDelay>
+      <Beauty>16</Beauty>
+    </statBases>
+    <!-- <equippedStatOffsets>
+      <MoveSpeed>1.3</MoveSpeed>
+      <FoodPoisonChance>-0.2</FoodPoisonChance>
+      <ToxicEnvironmentResistance>0.3</ToxicEnvironmentResistance>
+      <ToxicResistance>0.3</ToxicResistance>
+      <SocialImpact>0.12</SocialImpact>
+      <NegotiationAbility>0.2</NegotiationAbility>
+    </equippedStatOffsets> -->
+    <apparel>
+      <gender>Female</gender>
+      <wornGraphicPath>Apparel/ZA_Maid_L</wornGraphicPath>
+      <layers>
+        <li>LA_Layer_Outer</li>
+      </layers>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="ZXCostumesApparelBase_Lilly">
+    <defName>ZA_Maidheaddress_Lilly</defName>
+    <label>Maid Headwear Lilly</label>
+    <description>Maid Headwear Lilly</description>
+    <graphicData>
+      <texPath>Apparel/ZA_Maidheaddress</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Cloth>1</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <WorkToMake>10</WorkToMake>
+      <Mass>0</Mass>
+      <!-- <ArmorRating_Sharp>0.025</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.05</ArmorRating_Heat>
+      <Insulation_Cold>2</Insulation_Cold>
+      <Insulation_Heat>1</Insulation_Heat>
+      <Flammability>-1</Flammability> -->
+      <EquipDelay>0</EquipDelay>
+      <Beauty>16</Beauty>
+    </statBases>
+    <!-- <equippedStatOffsets>
+      <SocialImpact>0.05</SocialImpact>
+      <NegotiationAbility>0.05</NegotiationAbility>
+    </equippedStatOffsets> -->
+    <apparel>
+      <gender>Female</gender>
+      <wornGraphicPath>Apparel/ZA_Maidheaddress</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+    </apparel>
+  </ThingDef>
+  
+</Defs>
